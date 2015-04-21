@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Exam 2 Problem</title>
+    
+    <link rel="stylesheet" type="text/css" href="styles\Exam2Problem.css" />
+    
+    <script src=js/Exam2Problem.js></script>
+    
+</head>
+
+<body>
+
+
+<section id="title">
+
+<h1>Cole Adams Exam 2 Problem</h1>    
+    
+<hr>
+    
+<select onchange="MenuChoice()" id="menu">
+    
+    <option>Please select an option</option>
+    
+    <option>Category List</option>
+    
+    <option>Create Category</option>
+    
+    <option>Change Description</option>
+    
+    <option>Delete Category</option>
+    
+    <option>About</option>
+    
+</select>
+
+<hr>
+
+
+</section>
+
+
+<!-- section 1: Category List-->
+<section id="section1" class="section1">
+    
+<hr>
+    
+<button onclick="GetCategories()" id="categories">Get Category List</button>
+
+<br>
+    
+<hr>    
+
+<label id="displaycategories">Display customer list here</label>  
+    
+</section>
+
+
+
+
+<!-- section 2: Add Product-->
+<section id="section2" class="section2">
+
+<br>
+    
+<label>Please enter a category name: </label>
+
+<input type="text" id="categoryname">
+
+<br>
+    
+<label>Please enter a category description: </label>
+
+<input type="text" id="categorydescription">
+    
+<br>
+    
+<button onclick="AddProduct()" id="newproduct">Add a New Product</button>
+
+<br>
+    
+<hr>
+    
+<br>
+    
+<label id="result">The operation's result will display here.</label>
+
+</section>
+
+
+<!-- section 3: Change Description-->
+<section id="section3" class="section3">
+
+<br>
+    
+<label>Please enter the category ID: </label>
+
+<input type="number" id="catid">
+
+<br>
+
+    
+<label>Please enter a new description: </label>
+
+<input type="text" id="catdescription">
+
+<br>
+    
+    
+<button onclick="UpdateDescription()" id="descriptionupdate">Update Category Description</button>
+
+<br>
+    
+<hr>
+    
+<br>
+    
+<label id="result2">The operation's result will display here.</label>
+
+</section>
+
+
+<!-- section 4: Delete Category-->
+<section id="section4" class="section4">
+
+<br>
+
+<label>Please enter the Category ID to be deleted: </label>
+
+<input type="number" id="catiddelete">
+    
+<br>
+    
+<button onclick="DeleteCategory()" id="catdelete">Delete Category From Database</button>
+
+<br>
+    
+<hr>
+    
+<br>
+    
+<label id="result3">The operation's result will display here.</label>
+
+</section>
+
+
+<!-- section 5: About-->
+<section id="section5" class="section5">
+
+<h2>
+
+<br>
+
+Cole Adams
+
+<br>
+
+Managment Information Systems
+
+<br>
+
+cadams77@uab.edu
+
+<br>
+    
+<br>    
+
+I enjoyed this assignment. I felt it made good use of the major skills we have learned throughout the semester!
+
+<br>
+
+Thank you for the new knowledge!
+
+<br>
+    
+<br>    
+
+As an added bonus and a show of my gratitude, here is some cheese.
+
+</h2>
+
+<br>
+    
+<br>    
+
+<img src="images/cheese.jpg" id="cheese">
+
+</section>
+
+
+
+
+</body>
+</html>
+
